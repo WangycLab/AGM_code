@@ -11,7 +11,7 @@ The **Space_Scripts** folder contains the analysis scripts for the **spacecraft 
 
 The corresponding **expression matrices**, **species annotation files**, and **gene annotation file** for the dataset are available at the following link:
 
-[https://doi.org/10.6084/m9.figshare.31872934](https://doi.org/10.6084/m9.figshare.31872934)
+[https://ngdc.cncb.ac.cn/omix/preview/hSk6yG5k](https://ngdc.cncb.ac.cn/omix/preview/hSk6yG5k)
 
 Please download and extract the dataset to obtain the **Space_Matrix** and **Store_Matrix** folders, as well as the file **reference_genome_gene_annotation.tsv**.
 
