@@ -11,7 +11,7 @@ The **Space_Scripts** folder contains the analysis scripts for the **spacecraft 
 
 The corresponding **expression matrices**, **species annotation files**, and **gene annotation file** for the dataset are available at the following link:
 
-[https://ngdc.cncb.ac.cn/omix/preview/mlhpPKpE](https://ngdc.cncb.ac.cn/omix/preview/mlhpPKpE)
+[https://doi.org/10.6084/m9.figshare.33395212](https://doi.org/10.6084/m9.figshare.33395212)
 
 Please download and extract the dataset to obtain the **Space_Matrix** and **Store_Matrix** folders, as well as the file **reference_genome_gene_annotation.tsv**.
 
@@ -49,31 +49,10 @@ Navigate to the folder:
 Space_Scripts/Figure2
 ```
 
-To generate **Figure 2e** and **Figure 2f**, run the scripts in the following order:
+To generate **Figure 2e**, **Figure 2f**, **Figure 2g**, and **Figure 2h**, run:
 
 ```
-Figure2ef_cell_qc_primary.py
-Figure3ef_species_similarity.py
-```
-
-To generate **Figure 2i**, run:
-
-```
-Figure2gij_umap_clustering.R
-```
-
-To generate **Figure 2g** and **Figure 2j**, run the following scripts sequentially:
-
-```
-Figure2g_gene_counts.py
-Figure2j_sankey_mapping.py
-```
-
-To generate **Figure 2h**, run the following scripts in sequence:
-
-```
-Figure2h_expression_profile.R
-Figure2h_expression_similarity.py
+Figure2.R
 ```
 
 ---
@@ -86,37 +65,31 @@ Navigate to the folder:
 Space_Scripts/Figure3
 ```
 
-To generate **Figure 3b**, run:
+To generate **Figure 3b** and **Figure 3c**, run the following scripts in the following order:
 
 ```
-Figure3b_msc_vs_meta.R
+Figure3_qc_primary.py
+Figure3_qc_secondary.py
+Figure3bc_similarity.py
 ```
 
-To generate **Figure 3c** and **Figure 3d**, run the scripts in the following order:
+To generate **Figure 3d**, run:
 
 ```
-Figure3_cell_qc_primary.py
-Figure3_cell_qc_secondary.py
-Figure3cd_similarity_mds_jsd.py
+Figure3d_abundance.R
 ```
 
-To generate **Figure 3e**, run:
+To generate **Figure 3e**, run the following scripts in sequence:
 
 ```
-Figure3e_abundance_profile.R
+Figure3ef_stage_scaled.py
+Figure3e_volcano.R
 ```
 
-To generate **Figure 3f**, run the following scripts in sequence:
+To generate **Figure 3f**, run:
 
 ```
-Figure3fg_stage_scaled.py
-Figure3f_stage_volcano.R
-```
-
-To generate **Figure 3g**, run:
-
-```
-Figure3g_stage_heatmap.py
+Figure3f_stage_heatmap.py
 ```
 
 ---
@@ -129,31 +102,41 @@ Navigate to the folder:
 Space_Scripts/Figure4
 ```
 
-To generate **Figure 4a** and **Figure 4b**, run the following scripts in sequence:
+To generate **Figure 4a**, run:
+
+```
+Figure4a.R
+```
+
+To generate **Figure 4b**, run the following scripts in sequence:
 
 ```
 Figure4_umap_clustering.R
-Figure4ab_cell_gene_counts.py
+Figure4b_composition_umap.py
 ```
 
 To generate **Figure 4c**, run:
 
 ```
-Figure4c_composition_umap.py
+Figure4c_cluster_feature.py
 ```
 
 To generate **Figure 4d**, run:
 
 ```
-Figure4d_species_feature.py
+Figure4d_genus.py
 ```
 
-To generate **Figure 4e**, run the scripts in the following order:
+To generate **Figure 4e**, run:
 
 ```
-Figure4e_cluster_annotation.py
-Figure4e_cluster_similarity.py
-Figure4e_cluster_feature.py
+Figure4e_astronaut.py
+```
+
+To generate **Figure 4f**, run:
+
+```
+Figure4f_stage.py
 ```
 
 ---
@@ -166,38 +149,47 @@ Navigate to the folder:
 Space_Scripts/Figure5
 ```
 
-To generate **Figure 5a** and **Figure 5c**, run the following script:
+To generate **Figure 5a**, run:
 
 ```
 Figure5_pseudotime.R
 ```
 
-To generate **Figure 5b**, run the scripts in sequence:
+To generate **Figure 5b**, run:
 
 ```
-Figure5b_cluster_timepoint.py
-Figure5b_cluster_timepoint.R
+Figure5b.py
 ```
 
-To generate **Figure 5d**, run:
+To generate **Figure 5c**, run:
 
 ```
-Figure5d_timepoint_pseudotime.py
+Figure5c.py
 ```
 
-To generate **Figure 5e**, run:
+To generate **Figure 5d** and **Figure 5e**, run:
 
 ```
-Figure5e_pseudotime_clustering.py
+Figure5de.py
 ```
 
-To generate **Figure 5f**, run the scripts in the following order:
+To generate **Figure 5f**, run the following scripts in sequence:
 
 ```
-Figure5f_cluster_annotation.py
-Figure5f_cluster_cog_enrichment.py
-Figure5f_cluster_cog_heatmap.py
+Figure5f_annotation.py
+Figure5f_cog_enrichment.py
+Figure5f_cog_heatmap.py
 ```
+
+To generate **Figure 5g**, run the following scripts in sequence:
+
+```
+Figure5g_annotation.py
+Figure5g_cog_enrichment.py
+Figure5g_cog_heatmap.py
+```
+
+Here, only the code for *Phocaeicola vulgatus* is provided. The code for other species can be generated following the same workflow as that for *Phocaeicola vulgatus*.
 
 ---
 
@@ -209,30 +201,28 @@ Navigate to the folder:
 Space_Scripts/Figure6
 ```
 
-To generate **Figure 6a**, **Figure 6b**, and **Figure 6d**, run:
+To generate **Figure 6a**, **Figure 6c**, **Figure 6d**, and **Figure 6g**, run:
 
 ```
-Figure6_hdWGCNA.R
+Figure6_umap_hdWGCNA.R
 ```
 
-To generate **Figure 6c**, run the following scripts in sequence:
+To generate **Figure 6b**, run:
 
 ```
-Figure6cf_hub_annotation.py
-Figure6c_hub_timepoint_bubble.py
+Figure6b_timepoint.py
 ```
 
-To generate **Figure 6f**, run the following scripts in sequence:
+To generate **Figure 6e**, run the following scripts in sequence:
 
 ```
-Figure6f_hub_cog_enrichment.py
-Figure6f_hub_cog_heatmap.py
+Figure6e_hub_annotation.py
+Figure6e_hub_cog_enrichment.py
+Figure6e_hub_cog_heatmap.py
 ```
 
-To generate **Figure 6e**, run:
+To generate **Figure 6f**, run:
 
 ```
-Figure6e_edge_annotation.py
+Figure6f_hub_timepoint_bubble.py
 ```
-
-This will generate the base files for importing into Cytoscape to create **Figure 6e**.
