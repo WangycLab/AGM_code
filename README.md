@@ -34,6 +34,43 @@ Once the folders are organized as described, you can directly execute the analys
 
 ---
 
+## Software and Version Information
+
+The major software and packages used in the analysis include:
+
+| Software / Package | Version | Main application |
+|---|---|---|
+| **Seurat** | **v5.3.0** | Single-cell expression matrix processing, normalization, dimensionality reduction, clustering, and downstream single-cell analysis |
+| **Harmony** | **v1.2.3** | Batch-effect correction and integration of single-cell datasets |
+| **monocle3** | **v1.4.26** | Trajectory inference and pseudotime analysis |
+| **hdWGCNA** | **v0.4.6** | Single-cell co-expression network construction and module analysis |
+| **WGCNA** | **v1.74** | Weighted gene co-expression network analysis |
+| **BPCells** | **v0.3.1** | Efficient processing and storage of large single-cell expression matrices |
+| **SeuratWrappers** | **v0.4.0** | Integration of additional single-cell analysis tools with Seurat |
+| **edgeR** | **v4.0.16** | Differential expression and count-based statistical analysis |
+| **limma** | **v3.58.1** | Differential expression and statistical modeling |
+| **glmGamPoi** | **v1.14.3** | Gamma-Poisson generalized linear modeling for single-cell count data |
+| **Matrix** | **v1.6.5** | Sparse matrix representation and manipulation of single-cell expression data |
+| **irlba** | **v2.3.5.1** | Fast truncated singular value decomposition for dimensionality reduction |
+| **dplyr** | **v1.1.4** | Data manipulation and transformation |
+| **tibble** | **v3.3.0** | Data-frame and metadata handling |
+| **data.table** | **v1.17.8** | Efficient processing of large tabular datasets |
+| **tidyr** | **v1.3.1** | Data reshaping and tidying |
+| **tidyverse** | **v2.0.0** | Integrated data manipulation and analysis workflows |
+| **ggplot2** | **v4.0.0** | Data visualization and figure generation |
+| **ggpubr** | **v0.6.2** | Statistical visualization and publication-quality figure generation |
+| **ggrepel** | **v0.9.6** | Non-overlapping text labels in plots |
+| **ggalluvial** | **v0.12.6** | Alluvial and flow diagram visualization |
+| **patchwork** | **v1.3.2** | Combination and arrangement of multiple plots |
+| **cowplot** | **v1.2.0** | Plot arrangement and figure composition |
+| **RColorBrewer** | **v1.1.3** | Color palettes for data visualization |
+| **ggsci** | **v3.2.0** | Scientific journal-style color palettes |
+| **viridis** | **v0.6.5** | Color palettes for quantitative data visualization |
+
+Custom R scripts and analysis pipelines used for data preprocessing, quality control, clustering, differential expression analysis, trajectory inference, co-expression network analysis, and figure generation are provided in the corresponding code repository.
+
+---
+
 ## Bioinformatics Analysis Workflow
 
 The scripts used to generate each figure are organized into separate folders (`Figure 2`–`Figure 6`) within the **Space_Scripts** directory.  
